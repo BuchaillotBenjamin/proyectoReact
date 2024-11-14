@@ -5,13 +5,13 @@ import { useForm } from "../../hooks/useForm";
 
 export const FormComponent = () => {
 
-    const {values, handleChange, resetForm} = useForm({
+    const { values, handleChange, resetForm } = useForm({
         email: '',
         nombre: '',
         edad: 0
     });
 
-    const {email, nombre, edad} = values;
+    const { email, nombre, edad } = values;
 
     const handleSubmitForm = () => {
         console.log(values);
@@ -22,7 +22,7 @@ export const FormComponent = () => {
     };
 
     return (
-        
+
         <div>
             <div>
                 <h2>Formulario</h2>
@@ -37,6 +37,6 @@ export const FormComponent = () => {
                 <button onClick={handleResetForm}>Resetear</button>
             </div>
         </div>
-        
+
     )
 }
